@@ -4,13 +4,13 @@ sbtPlugin := true
 
 name := "sbt-reactjs"
 
-organization := "com.github.ddispaltro"
+organization := "com.github.lglossman"
 
 scalacOptions ++= Seq("-deprecation", "-feature")
 
 libraryDependencies ++= Seq(
-  "org.webjars" % "react" % "0.13.3",
-  "org.webjars" % "jstransform" % "10.1.0",
+  "org.webjars" % "react" % "0.14.3",
+  "org.webjars.npm" % "babel-standalone" % "1.0.0",
   "org.webjars" % "esprima" % "13001.1.0-dev-harmony-fb",
   "org.webjars" % "base62js" % "1.0.0",
   "org.webjars" % "source-map" % "0.1.40-1",

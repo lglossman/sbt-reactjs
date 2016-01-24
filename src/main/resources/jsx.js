@@ -8,7 +8,7 @@
         fs = require("fs"),
         mkdirp = require("mkdirp"),
         path = require("path"),
-        jsx =  require('react-tools');
+        babel =  require('babel-standalone');
 
     var SOURCE_FILE_MAPPINGS_ARG = 2;
     var TARGET_ARG = 3;
@@ -46,7 +46,7 @@
             throwIfErr(e);
 
             try {
-                var compileResult = jsx.transform(contents, options);
+                var compileResult = babel.transform(contents, { presets: ['react'] });
 
                 mkdirp(path.dirname(output), function (e) {
                     throwIfErr(e);
