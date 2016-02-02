@@ -9,7 +9,6 @@ organization := "com.github.lglossman"
 scalacOptions ++= Seq("-deprecation", "-feature")
 
 libraryDependencies ++= Seq(
-  "org.webjars" % "react" % "0.14.3",
   "org.webjars.npm" % "babel-standalone" % "1.0.0",
   "org.webjars" % "esprima" % "13001.1.0-dev-harmony-fb",
   "org.webjars" % "base62js" % "1.0.0",
